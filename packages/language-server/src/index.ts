@@ -11,12 +11,11 @@ const plugin: LanguageServerPlugin = (): ReturnType<LanguageServerPlugin> => ({
 	resolveConfig(config) {
 		// languages
 		config.languages ??= {};
-		config.languages.unocss ??= language;
 
 		// services
 		config.services ??= {};
-		config.services.unocss ??= (context): ReturnType<Service> => ({
-			provideCompletionItems() {},
+		config.services.unocss ??= (_context): ReturnType<Service> => ({
+			// provideCompletionItems() {},
 		});
 
 		return config;
