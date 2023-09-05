@@ -1,22 +1,22 @@
 {
-	"name": "@html1/language-server",
+	"name": "unocss-lsp",
 	"version": "0.0.0",
 	"packageManager": "pnpm@8.7.3",
 	"author": "Ray <i@mk1.io> (@so1ve)",
 	"description": "",
 	"keywords": [],
-	"homepage": "https://github.com/so1ve/html1#readme",
+	"homepage": "https://github.com/so1ve/unocss-lsp#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/so1ve/html1.git"
+		"url": "git+https://github.com/so1ve/unocss-lsp.git"
 	},
 	"bugs": {
-		"url": "https://github.com/so1ve/html1/issues"
+		"url": "https://github.com/so1ve/unocss-lsp/issues"
 	},
 	"license": "MIT",
 	"sideEffects": false,
 	"bin": {
-		"html1-language-server": "./bin/html1-language-server.js"
+		"unocss-lsp": "./bin/unocss-lsp.js"
 	},
 	"main": "./dist/index.js",
 	"typesVersions": {
@@ -38,12 +38,6 @@
 		"prepublishOnly": "nr build"
 	},
 	"dependencies": {
-		"@volar/language-core": "~1.10.0",
-		"@volar/language-server": "~1.10.0",
-		"@volar/language-service": "~1.10.0",
-		"volar-service-css": "0.0.13",
-		"volar-service-emmet": "0.0.13",
-		"volar-service-html": "0.0.13",
-		"vscode-html-languageservice": "^5.0.6"
+		"@volar/language-server": "~1.10.0"
 	}
 }

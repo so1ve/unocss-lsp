@@ -1,19 +1,19 @@
 {
-	"name": "html1",
-	"displayName": "html1",
+	"name": "unocss-lsp",
+	"displayName": "UnoCSS LSP",
 	"private": true,
 	"version": "0.0.0",
 	"packageManager": "pnpm@8.7.3",
 	"publisher": "so1ve",
 	"author": "Ray <i@mk1.io> (@so1ve)",
 	"description": "",
-	"homepage": "https://github.com/so1ve/html1#readme",
+	"homepage": "https://github.com/so1ve/unocss-lsp#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/so1ve/html1.git"
+		"url": "git+https://github.com/so1ve/unocss-lsp.git"
 	},
 	"bugs": {
-		"url": "https://github.com/so1ve/html1/issues"
+		"url": "https://github.com/so1ve/unocss-lsp/issues"
 	},
 	"categories": [
 		"Programming Languages"
@@ -28,18 +28,8 @@
 		"vscode": "^1.78.1"
 	},
 	"activationEvents": [
-		"onLanguage:html1"
+		"onLanguage:html"
 	],
-	"contributes": {
-		"languages": [
-			{
-				"id": "html1",
-				"extensions": [
-					".html1"
-				]
-			}
-		]
-	},
 	"publishConfig": {
 		"access": "public"
 	},
@@ -50,11 +40,11 @@
 		"vscode:prepublish": "nr build"
 	},
 	"devDependencies": {
-		"@html1/language-server": "workspace:*",
 		"@types/vscode": "1.81.0",
 		"@volar/language-server": "~1.10.0",
 		"@volar/vscode": "~1.10.0",
 		"@vscode/vsce": "latest",
+		"unocss-lsp": "workspace:*",
 		"vscode-languageclient": "^8.1.0"
 	}
 }

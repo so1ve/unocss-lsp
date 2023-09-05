@@ -1,7 +1,6 @@
-import type { InitializationOptions } from "@volar/language-server";
 import * as serverProtocol from "@volar/language-server/protocol";
 import type { ExportsInfoForLabs } from "@volar/vscode";
-import { activateAutoInsertion, supportLabsVersion } from "@volar/vscode";
+import { supportLabsVersion } from "@volar/vscode";
 import * as vscode from "vscode";
 import * as lsp from "vscode-languageclient/node";
 
@@ -27,27 +26,17 @@ export async function activate(context: vscode.ExtensionContext) {
 			options: debugOptions,
 		},
 	};
-	const initializationOptions: InitializationOptions = {
-		// no need tsdk because html1 language server do not needed TS support, you can uncomment this line if needed
-		// typescript: { tsdk: require('path').join(vscode.env.appRoot, 'extensions/node_modules/typescript/lib') },
-	};
 	const clientOptions: lsp.LanguageClientOptions = {
-		documentSelector: [{ language: "html1" }],
-		initializationOptions,
+		documentSelector: [{ language: "html" }],
+		initializationOptions: {},
 	};
 	client = new lsp.LanguageClient(
-		"html1-language-server",
-		"HTML1 Language Server",
+		"unocss-lsp",
+		"UnoCSS LSP",
 		serverOptions,
 		clientOptions,
 	);
 	await client.start();
-
-	// support for auto close tag
-	activateAutoInsertion(
-		[client],
-		(document) => document.languageId === "html1",
-	);
 
 	// support for https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volarjs-labs
 	// ref: https://twitter.com/johnsoncodehk/status/1656126976774791168
