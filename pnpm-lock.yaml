@@ -19,7 +19,7 @@ importers:
         version: 0.120.4(prettier@3.2.5)
       '@types/node':
         specifier: ^18.16.6
-        version: 18.19.30
+        version: 18.19.31
       bumpp:
         specifier: ^9.1.1
         version: 9.4.0
@@ -1127,7 +1127,7 @@ packages:
   /@types/concat-stream@2.0.3:
     resolution: {integrity: sha512-3qe4oQAPNwVNwK4C9c8u+VJqv9kez+2MR4qJpoPFfXtgxxif1QbFusvXzK0/Wra2VX07smostI2VMmJNSpZjuQ==}
     dependencies:
-      '@types/node': 18.19.30
+      '@types/node': 18.19.31
     dev: true
 
   /@types/debug@4.1.12:
@@ -1174,8 +1174,8 @@ packages:
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
     dev: true
 
-  /@types/node@18.19.30:
-    resolution: {integrity: sha512-453z1zPuJLVDbyahaa1sSD5C2sht6ZpHp5rgJNs+H8YGqhluCXcuOUmBYsAo0Tos0cHySJ3lVUGbGgLlqIkpyg==}
+  /@types/node@18.19.31:
+    resolution: {integrity: sha512-ArgCD39YpyyrtFKIqMDvjz79jto5fcI/SVUs2HwB+f0dAzq68yqOdyaSivLiLugSziTpNXLQrVb7RZFmdZzbhA==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -6345,7 +6345,7 @@ packages:
       '@types/concat-stream': 2.0.3
       '@types/debug': 4.1.12
       '@types/is-empty': 1.2.3
-      '@types/node': 18.19.30
+      '@types/node': 18.19.31
       '@types/unist': 2.0.10
       concat-stream: 2.0.0
       debug: 4.3.4(supports-color@5.5.0)
